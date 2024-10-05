@@ -1,16 +1,68 @@
-# layout_flutter
+# Laporan Jobsheet 6
+## Layout dan Navigasi
+### Nama : Diva Aji Kurniawan <br> Kelas : TI 3G <br> No. Absen : 11 <br> NIM : 2241720183
 
-A new Flutter project.
+## Praktikum 1: Membangun Layout di Flutter
+1. Buat Project Baru
+Buatlah sebuah project flutter baru dengan nama layout_flutter.
+<img src="images/1.1.png">
 
-## Getting Started
+2. Buka file lib/main.dart
+Buka file main.dart lalu ganti dengan kode berikut. Isi nama dan NIM Anda di text title.
+<img src="images/1.2.png">
 
-This project is a starting point for a Flutter application.
+3. Identifikasi layout diagram
+4. Implementasi title row
+Membuat kolom bagian kiri pada judul. Tambahkan kode berikut di bagian atas metode build() di dalam kelas MyApp:
+```
+Widget titleSection = Container(
+  padding: const EdgeInsets.all(...),
+  child: Row(
+    children: [
+      Expanded(
+        /* soal 1*/
+        child: Column(
+          crossAxisAlignment: ...,
+          children: [
+            /* soal 2*/
+            Container(
+              padding: const EdgeInsets.only(bottom: ...),
+              child: const Text(
+                'Wisata Gunung di Batu',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            Text(
+              'Batu, Malang, Indonesia',
+              style: TextStyle(...),
+            ),
+          ],
+        ),
+      ),
+      /* soal 3*/
+      Icon(
+       ...,
+        color: ...,
+      ),
+      const Text(...),
+    ],
+  ),
+);
+```
 
-A few resources to get you started if this is your first Flutter project:
+**soal 1**  
+Letakkan widget Column di dalam widget Expanded agar menyesuaikan ruang yang tersisa di dalam widget Row. Tambahkan properti crossAxisAlignment ke CrossAxisAlignment.start sehingga posisi kolom berada di awal baris.
+<img src="images/1.4.1.png">
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+**soal 2** 
+Letakkan baris pertama teks di dalam Container sehingga memungkinkan Anda untuk menambahkan padding = 8. Teks ‘Batu, Malang, Indonesia' di dalam Column, set warna menjadi abu-abu.
+<img src="images/1.4.2.png">
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**soal 3** 
+Dua item terakhir di baris judul adalah ikon bintang, set dengan warna merah, dan teks "41". Seluruh baris ada di dalam Container dan beri padding di sepanjang setiap tepinya sebesar 32 piksel. Kemudian ganti isi body text ‘Hello World' dengan variabel titleSection
+<img src="images/1.4.3.1.png">
+<img src="images/1.4.3.2.png">
+<img src="images/1.4.3.3.png">
+
