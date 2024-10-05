@@ -59,7 +59,7 @@ class MyApp extends StatelessWidget {
     Widget textSection = Container(
       padding: const EdgeInsets.all(32),
       child: const Text(
-        'Diva Aji Kurniawan \n 2241720183 \n'
+        'Diva Aji Kurniawan \n 2241720183 \n\n'
         'Gunung Butak, yang terletak di perbatasan Kota Batu dan Blitar, adalah salah satu destinasi pendakian yang menarik di Jawa Timur.'
         'Dengan ketinggian sekitar 2.868 meter di atas permukaan laut, gunung ini menawarkan pemandangan alam yang mempesona dan jalur pendakian yang cukup'
         'menantang, sehingga cocok bagi pendaki berpengalaman.'
@@ -75,8 +75,14 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Flutter layout demo'),
         ),
-        body: Column(
+        body: ListView(
           children: [
+            Image.asset(
+              'images/gunung_butak.jpg',
+              width: 600,
+              height: 240,
+              fit: BoxFit.cover,
+            ),
             titleSection,
             buttonSection,
             textSection,
