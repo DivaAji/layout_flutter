@@ -83,3 +83,15 @@ Tambahkan variabel buttonSection ke dalam body seperti berikut:
 
 ### Output Praktikum 2
 <img src="images/output2.png">
+
+## Praktikum 3: Implementasi text section
+### Langkah 1: Buat widget textSection
+Tentukan bagian teks sebagai variabel. Masukkan teks ke dalam Container dan tambahkan padding di sepanjang setiap tepinya. Tambahkan kode berikut tepat di bawah deklarasi buttonSection:
+<img src="images/3.1.png">
+
+### Langkah 2: Tambahkan variabel text section ke body
+Tambahkan widget variabel textSection ke dalam body seperti berikut:
+<img src="images/3.2.png">
+
+### Output Praktikum 3
+<img src="images/output3.png">

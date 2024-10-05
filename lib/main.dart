@@ -56,6 +56,19 @@ class MyApp extends StatelessWidget {
       ],
     );
 
+    Widget textSection = Container(
+      padding: const EdgeInsets.all(32),
+      child: const Text(
+        'Diva Aji Kurniawan \n 2241720183 \n'
+        'Gunung Butak, yang terletak di perbatasan Kota Batu dan Blitar, adalah salah satu destinasi pendakian yang menarik di Jawa Timur.'
+        'Dengan ketinggian sekitar 2.868 meter di atas permukaan laut, gunung ini menawarkan pemandangan alam yang mempesona dan jalur pendakian yang cukup'
+        'menantang, sehingga cocok bagi pendaki berpengalaman.'
+        'Sepanjang perjalanan menuju puncak, pendaki akan disuguhkan dengan hutan pinus yang rimbun, padang savana, serta hamparan bunga edelweis yang indah.'
+        'Di puncaknya, keindahan panorama Gunung Arjuno dan Gunung Semeru terlihat jelas, menjadikan Gunung Butak destinasi populer bagi pecinta alam dan petualang.',
+        softWrap: true,
+      ),
+    );
+
     return MaterialApp(
       title: 'Flutter layout: Diva Aji Kurniawan',
       home: Scaffold(
@@ -66,6 +79,7 @@ class MyApp extends StatelessWidget {
           children: [
             titleSection,
             buttonSection,
+            textSection,
           ],
         ),
       ),
