@@ -3,16 +3,16 @@
 ### Nama : Diva Aji Kurniawan <br> Kelas : TI 3G <br> No. Absen : 11 <br> NIM : 2241720183
 
 ## Praktikum 1: Membangun Layout di Flutter
-1. Buat Project Baru
+### Langkah 1: Buat Project Baru
 Buatlah sebuah project flutter baru dengan nama layout_flutter.
 <img src="images/1.1.png">
 
-2. Buka file lib/main.dart
+### Langkah 2: Buka file lib/main.dart
 Buka file main.dart lalu ganti dengan kode berikut. Isi nama dan NIM Anda di text title.
 <img src="images/1.2.png">
 
-3. Identifikasi layout diagram
-4. Implementasi title row
+### Langkah 3: Identifikasi layout diagram
+### Langkah 4: Implementasi title row
 Membuat kolom bagian kiri pada judul. Tambahkan kode berikut di bagian atas metode build() di dalam kelas MyApp:
 ```
 Widget titleSection = Container(
@@ -66,3 +66,20 @@ Dua item terakhir di baris judul adalah ikon bintang, set dengan warna merah, da
 <img src="images/1.4.3.2.png">
 <img src="images/1.4.3.3.png">
 
+### Output Praktikum 1
+<img src="images/output1.png">
+
+## Praktikum 2: Implementasi button row
+### Langkah 1: Buat method Column _buildButtonColumn
+<img src="images/2.1.png">
+
+### Langkah 2: Buat widget buttonSection
+Buat Fungsi untuk menambahkan ikon langsung ke kolom. Teks berada di dalam Container dengan margin hanya di bagian atas, yang memisahkan teks dari ikon.
+<img src="images/2.2.png">
+
+### Langkah 3: Tambah button section ke body
+Tambahkan variabel buttonSection ke dalam body seperti berikut:
+<img src="images/2.3.png">
+
+### Output Praktikum 2
+<img src="images/output2.png">
