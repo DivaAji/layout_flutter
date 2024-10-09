@@ -4,6 +4,8 @@
 
 ## Praktikum 1: Membangun Layout di Flutter
 ### Langkah 1: Buat Project Baru
+Link repo github: https://github.com/DivaAji/layout_flutter
+
 Buatlah sebuah project flutter baru dengan nama layout_flutter.
 <img src="images/1.1.png">
 
@@ -99,11 +101,23 @@ Tambahkan widget variabel textSection ke dalam body seperti berikut:
 ## Praktikum 4: Implementasi image section
 ### Langkah 1: Siapkan aset gambar
 Buatlah folder images di root project layout_flutter. Masukkan file gambar tersebut ke folder images, lalu set nama file tersebut ke file pubspec.yaml seperti berikut:
+<img src="images/4.1.png">
 
 ### Langkah 2: Tambahkan gambar ke body
 Tambahkan aset gambar ke dalam body:
-
+<img src="images/4.2.png">
 BoxFit.cover memberi tahu kerangka kerja bahwa gambar harus sekecil mungkin tetapi menutupi seluruh kotak rendernya.
 
 ### Langkah 3: Terakhir, ubah menjadi ListView
 Pada langkah terakhir ini, atur semua elemen dalam ListView, bukan Column, karena ListView mendukung scroll yang dinamis saat aplikasi dijalankan pada perangkat yang resolusinya lebih kecil.
+<img src="images/4.3.png">
+
+### Output praktikum 4
+<img src="images/output4.png">
+
+## Tugas Praktikum 1
+1. Selesaikan Praktikum 1 sampai 4, lalu dokumentasikan dan push ke repository Anda berupa screenshot setiap hasil pekerjaan beserta penjelasannya di file README.md!
+>Link repo : https://github.com/DivaAji/layout_flutter
+2. Silakan implementasikan di project baru "basic_layout_flutter" dengan mengakses sumber ini: https://docs.flutter.dev/codelabs/layout-basics
+>Link repo : https://github.com/DivaAji/basic_layout_flutter
+3. Kumpulkan link commit repository GitHub Anda kepada dosen yang telah disepakati!
